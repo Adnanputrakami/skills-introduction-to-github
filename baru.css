@@ -1,0 +1,155 @@
+/* reset & base style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* hero section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+    text-align: center;
+    padding: 2rem;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #00ff88, #00b4d8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+}
+
+.tagline {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+/*tentang saya*/
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00b4d8;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.skills {
+    margin-top: 1rem;
+}
+
+.skills-tag {
+    display: inline-block;
+    background: #00ff88 !important;
+    color: #0a0a0a !important;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    margin: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* project */
+.project h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00b4d8;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 255, 136, 0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 255, 136, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-card h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+/*tombol footer*/
+.cta-button {
+    background: #00b4d8;
+    color: #0a0a0a;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 2rem;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #00ff88;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #e0e0e0;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #00ff88;
+}
+
+/*responsif*/
+@media (max-width: 600px) {
+    .gradient-text {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+}
